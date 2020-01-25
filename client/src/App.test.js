@@ -9,15 +9,15 @@ it("renders without crashing", () => {});
 
 it("renders Searches", () => {
   const wrapped = rtl.render(<App />);
-  const heading2 = wrapped.queryAllByText(/Searchs/i);
-  expect(heading2).toBeTruthy();
+  const heading = wrapped.queryAllByText(/Searchs/i);
+  expect(heading).toBeTruthy();
 });
 
 it("renders Womens World", () => {
   const wrapped = rtl.render(<App />);
-  const heading = wrapped.queryByText(/Womens World/i);
+  const heading2 = wrapped.queryByText(/Womens World/i);
 
-  expect(heading).toBeTruthy();
+  expect(heading2).toBeTruthy();
 
-  expect(heading).toBeVisible();
+  expect(heading2).toBeVisible();
 });
