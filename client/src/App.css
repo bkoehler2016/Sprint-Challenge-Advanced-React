@@ -45,9 +45,10 @@
   box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
 }
 
-.playercard {
-  /* border: 1px solid orange; */
-  margin: 10px;
+section {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
 }
 
 .dark-mode__toggle {
