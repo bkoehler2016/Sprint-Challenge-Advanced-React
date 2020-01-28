@@ -82,8 +82,18 @@
   background-color: black;
 }
 
+div.ui.card {
+  display: inline-block;
+  min-width: 160px;
+  max-width: 300px;
+}
+
 .dark-mode h3 {
   background-color: black;
+}
+
+.dark-mode .ui.card .meta :last-child {
+  color: #fff;
 }
 
 .navbar {
@@ -95,7 +105,6 @@
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(360deg);
   }
